@@ -14,7 +14,7 @@ input (x1=0x7ffe2a076f64, x2=0x7ffe2a076f68, y1=0x7ffe2a076f6c,
 5       printf("enter values");
 (gdb) n
 6       scanf("%f %f %f %f",x1,x2,y1,y2);
-(gdb) n
+(gdb) n 
 enter values1 1 2 2
 7   }
 (gdb) n
