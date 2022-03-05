@@ -27,7 +27,7 @@ is_triangle (x1=1, x2=3, x3=2, y1=6, y2=3, y3=9) at p2final.c:10
 (gdb) n
 11      float area=1/2*a;
 (gdb) n
-12      if(area>0)
+12      if(area>0) 
 (gdb) n
 18          istriangle=0;
 (gdb) n
