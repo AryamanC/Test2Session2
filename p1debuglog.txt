@@ -1,1 +1,44 @@
+(gdb) b main
+Breakpoint 1 at 0x897: file p1final.c, line 18.
+(gdb) r
+Starting program: /home/runner/Test2Session2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
 
+Breakpoint 1, main () at p1final.c:18
+18  {
+(gdb) n
+20      input(&x1,&x2,&y1,&y2);
+(gdb) s
+input (x1=0x7ffe2a076f64, x2=0x7ffe2a076f68, y1=0x7ffe2a076f6c, 
+    y2=0x7ffe2a076f70) at p1final.c:5
+5       printf("enter values");
+(gdb) n
+6       scanf("%f %f %f %f",x1,x2,y1,y2);
+(gdb) n
+enter values1 1 2 2
+7   }
+(gdb) n
+main () at p1final.c:21
+21      distance(x1,x2,y1,y2,&area);
+(gdb) s
+distance (x1=1, x2=1, y1=2, y2=2, area=0x7ffe2a076f74) at p1final.c:10
+10      float a=(x2-x1)*(x2-x1) + (y2-y1)*(y2-y1);
+(gdb) n
+11      *area= sqrt(a);
+(gdb) n
+12  }
+(gdb) print *area
+$1 = 0
+(gdb) n
+main () at p1final.c:22
+22      output(x1,x2,y1,y2,area);
+(gdb) s
+output (x1=1, x2=1, y1=2, y2=2, area=0) at p1final.c:15
+15      printf("distance between the points are %f",area);
+(gdb) n
+16  }
+(gdb) n
+main () at p1final.c:23
+23      return 0;
+(gdb) n
+24  }
