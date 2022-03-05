@@ -18,7 +18,7 @@ int is_triangle(float x1,float x2,float x3,float y1,float y2,float y3)
 		istriangle=0;
 	}
 	return istriangle;
-}
+} 
 void output(float x1,float x2,float x3,float y1,float y2,float y3, int istriangle)
 {
 	if(istriangle==1)
